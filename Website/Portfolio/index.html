@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hinata</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        display: inline-block;
+      }
+
+      .header {
+        display: inline-block;
+        float: left;
+        margin-top: 14px;
+        margin-left: 12px;
+      }
+      nav h1{
+        
+        font-size: 45px;
+      }
+      nav {
+        background-color: rgb(119, 2, 109);
+        display: inline-block;
+        height: 8vh;
+        width: 100vw;
+        color: white;
+      }
+      footer {
+        background-color: rgb(119, 2, 109);
+        display: inline-block;
+        height: 8vh;
+        align-self: flex-end;
+        width: 100vw;
+      }
+      p {
+        margin: 1vh;
+      }
+      .nav-item {
+        display: inline-block;
+        margin-top: 11px;
+        margin-right: 30px;
+        padding: 1vh;
+        /* border: 2px solid white; */
+        font-size: 25px;
+        text-align: right;
+        float: right;
+      }
+
+      nav li a{
+        color: white;
+        text-align: right;
+        flex-direction: row-reverse;
+      }
+
+      .nav-item:hover {
+        font-size: 25px;
+        background-color: rgb(239, 236, 241);
+        border-radius: 20px;
+        color: rgb(119, 2, 109);
+      }
+      
+
+      
+
+      body {
+        background-image: url("img/imagebg.jpg");
+        display: flex;
+        flex-wrap: wrap;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: calc(100vh - 8vh - 8vh);
+        /* flex-direction: column; */
+      }
+
+      #hina {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 84vh;
+        margin: 0 8vw 0 10vw;
+        /* background-color: aqua; */
+      }
+
+      
+      pre {
+        margin: 40vh 10px;
+        text-shadow: 5;
+      }
+      #hinaa {
+        width: 600px;
+        height: 80vh;
+      }
+
+      #content {
+        display: flex;
+        /* min-height: 75vh; */
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+      }
+
+      .content-item {
+        display: flex;
+        color: beige;
+        flex-direction: column;
+        /* background-color: aqua; */
+        height: 15vh;
+        width: 10vw;
+        /* border: 2px solid white; */
+        align-items: center;
+        margin: 6vh 6vh 6vh 3vh;
+        /* padding: 1vw; */
+        tr
+      }
+      .content-item h3 {
+        font-size: 20px;
+      }
+      a:link {
+        color: rgb(107, 6, 107);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: rgb(238, 5, 238);
+        text-decoration: bold;
+      }
+      .hinata:hover {
+        height: 18vh;
+        font-size: 30px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .f-items {
+        font-size: 25px;
+      }
+
+      @media only screen and (max-width: 800px) {
+        footer {
+          background-color: aqua;
+          #hinaa {
+            height: 50vh;
+          }
+        }
+        #content-item {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+      @media only screen and (max-width: 1280px) {
+        footer {
+          background-color: aqua;
+        }
+        #content-item {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+       
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header">
+          <h1>PORTFOLIO</h1>
+        </div>
+        <ul>
+          <li class="nav-item">
+            <div>
+              <a href="/index.html"><h3>Contact</h3></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <a href="/index.html"><h3>Hinata</h3></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <a  href="/index.html"><h3>Home</h3></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="hina">
+        <img id="hinaa" src="img/hinata.png" alt="hinata" />
+      </div>
+
+     
+      <div id="content">
+        <div id="about" class="content-item">
+          <a href="My_self.html">
+            <img src="img/hina.png" class="hinata" height="130vh"
+          /></a>
+          <a href="/My_self.html"><h3>My Self</h3></a>
+        </div>
+
+        <div id="skills" class="content-item">
+          <a href="Skills.html">
+            <img src="img/light-bulb.png" class="hinata" height="130vh"
+          /></a>
+          <a href="/My_self.html"><h3>My Skills</h3></a>
+        </div>
+
+        <div id="achievement" class="content-item">
+          <a href="achievement.html">
+            <img src="img/trophy.png" class="hinata" height="130vh"
+          /></a>
+          <a href="/achievement.html"><h3>My Achievement</h3></a>
+        </div>
+      </div>
+    </main>
+    <footer class="f-items">
+      <p style="color: white">@ 2023 Siddhant_kumar</p>
+    </footer>
+  </body>
+</html>
+<script></script>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: #9b4b09;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        background-image: url("/Practice/img/night\ bg.jpg");
+        background-size: 100% 100%;
+      }
+
+      .box {
+        height: 24vh;
+        width: 12vw;
+        /* padding: 1vw; */
+        border-radius: 15px;
+        /* background-color: #831313; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1vw;
+        backdrop-filter: blur(28px);
+        position: relative;
+        top: 0vh;
+        border: 2px solid white;
+        transition: all 1s;
+      }
+      .image {
+        height: 15vh;
+        width: 7vw;
+        border-radius: 15px;
+        position: relative;
+        top: -2vh;
+        transition: all 1s;
+        filter: grayscale(2);
+      }
+      .container .box:hover {
+        height: 35vh;
+        width: 17vw;
+        border: 10px solid white;
+      }
+      .container .box:hover .image {
+        top: -5vh;
+        scale: 1.5;
+        box-shadow: 5px 7px 12px 6px rgb(49, 48, 48);
+        filter: grayscale(0);
+      }
+      .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        color: #fdfcfc;
+        font-size: 1vw;
+        padding: 0 1vw;
+      }
+      p {
+        padding: 0.3vh 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="/Practice/img/Hinata4.jpeg" alt="" class="image" />
+        <div class="about">
+          <p>Name :</p>
+          <p>Age :</p>
+          <p>Hobby :</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipieriam mollitia corporis
+            ab id, vero tempora commodi q deleniti!
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="/Practice/img/Hinata4.jpeg" alt="" class="image" />
+        <div class="about">
+          <p>Name :</p>
+          <p>Age :</p>
+          <p>Hobby :</p>
+          <p>
+            Lorem ipsum dolor sit, amet cing elit. Aperiam mollitia corporis ab
+            id, vero inventore temporuas enim deleniti!
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="/Practice/img/Hinata4.jpeg" alt="" class="image" />
+        <div class="about">
+          <p>Name :</p>
+          <p>Age :</p>
+          <p>Hobby :</p>
+          <p>
+            Lorem ipsum doloricing elit. Aperiam mollitia corporis ab id, vero
+            inventore tempora commodi quas enim deleniti!
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="/Practice/img/Hinata4.jpeg" alt="" class="image" />
+        <div class="about">
+          <p>Name :</p>
+          <p>Age :</p>
+          <p>Hobby :</p>
+          <p>
+            Lorem ipsum dolor sit, amet consecteiam mollitia corporis ab id,
+            vero inventore tempora commodi quas enim deleniti!
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="/Practice/img/Hinata4.jpeg" alt="" class="image" />
+        <div class="about">
+          <p>Name :</p>
+          <p>Age :</p>
+          <p>Hobby :</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicinlitia corporis ab
+            id, vero inventore tempora commodi quas enim deleniti!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

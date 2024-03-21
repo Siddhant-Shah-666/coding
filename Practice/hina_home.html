@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #box{
+            display: flex;
+        }
+        #main{
+            display: flex;
+            flex-direction: column;
+        }
+        #nav{
+            width: 400px;
+            height: 100vh;
+            color: azure;
+            background-color: rgb(107, 14, 107);
+            padding-top: 2vh;
+            
+        }
+        #nav ul li{
+           text-decoration: none;
+           margin: 0 0 0 5px;
+           margin-top: 4vw;
+           list-style: none;
+           /* padding-top: 4vh; */
+
+       }
+        #nav ul li a{
+            color: rgb(129, 8, 145);
+            text-decoration: none;
+           background-color: white;
+           border-radius: 30%;
+            margin-top: 4vw;
+            font-size: 30px;
+            padding: 1vh 1vw;
+            transition: padding 1s ;
+        }
+        #nav ul li a:hover{
+            padding:2vh 2vw;
+            text-decoration: underline;
+
+        }
+       
+        .box1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10vh;
+            width: 90vw;
+            color: rgb(134, 12, 118);
+            background-color: rgb(252, 248, 251);
+            text-align: center;
+            font-size: 50px;
+            text-decoration:overline;
+            font-style: italic;
+            font-weight: bolder;
+
+        }
+        .box2{
+            height: 80vh;
+            width: 90vw;
+            color: beige;
+            background-color: rgb(37, 113, 201);
+            /* text-align: center; */
+            /* font-size: 40px; */
+        }
+        .hina{
+            height: 80vh;
+            width: 90vw;
+        }
+        .box3{
+            height: 10vh;
+            width: 90vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(134, 12, 118);
+            background-color: rgb(252, 248, 251);
+            text-align: center;
+            font-size: 30px;
+            text-decoration:underline;
+            font-style: italic;
+            font-weight: bolder;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div id="box">
+            <div id="nav"><h2>
+                <ul class="nav-item">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">IMAGES</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </h2></div>
+            <div id="main">
+                <div class="box1"><header>HINATA SAMA</header></div>
+                <div class="box2"><h2>
+                    <img class="hina" src="img/hinata3.png" alt="">
+                </h2></div>
+                <div class="box3"><h2>My Darling</h2></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            /* display: inline-block; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+       .box{
+        height: 20vh;
+        width: 25vw;
+        border: 15px solid rgb(169, 119, 13);
+        min-width: 24vw;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        box-sizing: border-box;
+        margin: 10px;
+        min-width: 20vw;
+
+       }
+       .mainbox{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+       }
+       .box1{
+        background-color: aqua;
+        position: relative;
+       transition: width 1s,top 1s,left 1s,all 1s;
+       display: flex;
+       top: 0%;
+       left: 0%;
+
+       
+
+       }
+       .box1:hover{
+        /* top: 10vh; */
+        /* left: 20vh; */
+        /* width: 30vw; */
+        /* transform: rotate(45deg); */
+       transform: rotate(45deg)
+       }
+       .image{
+        height: 10vh;
+        width: 15vh;
+        position: relative;
+        top: 0%;
+       }
+
+    </style>
+</head>
+<body>
+    <header><h1>Responsive</h1> </header>
+    <main>
+        <div class="mainbox">
+        <div class="box box1">
+            <img src="img/Hinata.jpg" alt="" class="image">
+            <p>box1</p>
+         
+        </div>
+        <div class="box">
+            <p>box2</p>
+        </div>
+        <div class="box">
+            <p>box3</p>
+        </div>
+        <div class="box">
+            <p>box4</p>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

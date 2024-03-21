@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox1</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .class1 {
+        display: flex;
+      }
+      .class2 {
+        display: flex;
+      }
+      .class3 {
+        display: flex;
+      }
+      .iclass1 {
+        display: flex;
+        height: 10vh;
+        width: 33vw;
+        border: 2px solid orange;
+      }
+      .iclass2 {
+        display: flex;
+        /* height: 23vh;
+        width: 32vw; */
+      }
+      .iclass3 {
+        display: flex;
+        /* height: 23vh;
+        width: 32vw; */
+      }
+
+      .box1 {
+        margin: 3px;
+        height: 25vh;
+        width: 33vw;
+        color: aliceblue;
+        background-color: rgb(173, 29, 173);
+        /* border: 2px solid lightcoral; */
+        border-radius: 5px;
+      }
+      .box2 {
+        margin: 3px;
+        height: 5vh;
+        width: 25vw;
+        color: aliceblue;
+        background-color: rgb(173, 29, 173);
+        /* border: 2px solid lightcoral; */
+        border-radius: 5px;
+      }
+      .box3 {
+        margin: 3px;
+        height: 5vh;
+        width: 20vw;
+        color: aliceblue;
+        background-color: rgb(173, 29, 173);
+        /* border: 2px solid lightcoral; */
+        border-radius: 5px;
+      }
+      .ibox1 {
+        margin: 3px;
+        height: 8vh;
+        width: 11vw;
+        color: rgb(218, 36, 172);
+        background-color: rgb(240, 228, 240);
+        /* border: 2px solid lightcoral; */
+        border-radius: 5px;
+      }
+      .ibox2 {
+        margin: 3px;
+        height: 5vh;
+        width: 8vw;
+        color: rgb(209, 59, 159);
+        background-color: rgb(248, 243, 248);
+        /* border: 2px solid lightcoral; */
+        border-radius: 5px;
+        z-index: 1;
+      }
+      .ibox3 {
+        margin: 3px;
+        height: 5vh;
+        width: 8vw;
+        color: rgb(196, 47, 146);
+        background-color: rgb(248, 244, 248);
+        /* border: 2px solid lightcoral; */
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hinata sama</h1>
+    </header>
+
+    <main>
+      <div class="class1">
+            <div class="box1" id="id1">1
+              <div class="innerbox">
+                <div class="iclass1">
+                  <div class="ibox1" id="id1">1</div>
+                  <div class="ibox1" id="id2">2</div>
+                  <div class="ibox1" id="id3">3</div>
+                </div>
+                <div class="iclass2">
+                  <div class="ibox2" id="id4">1</div>
+                  <div class="ibox2" id="id5">2</div>
+                  <div class="ibox2" id="id6">3</div>
+                  <div class="ibox2" id="id7">1</div>
+                </div>
+                <div class="iclass3">
+                  <div class="ibox3" id="id8">1</div>
+                  <div class="ibox3" id="id9">2</div>
+                  <div class="ibox3" id="id10">3</div>
+                  <div class="ibox3" id="id11">4</div>
+                  <div class="ibox3" id="id12">5</div>
+                </div>
+              </div>
+            </div>
+            <div class="box1" id="id2">2</div>
+            <div class="box1" id="id3">3</div>
+          </div>
+          <div class="class2">
+            <div class="box2" id="id4">1</div>
+            <div class="box2" id="id5">2</div>
+            <div class="box2" id="id6">3</div>
+            <div class="box2" id="id7">4</div>
+          </div>
+          <div class="class3">
+            <div class="box3" id="id8">1</div>
+            <div class="box3" id="id9">2</div>
+            <div class="box3" id="id10">3</div>
+            <div class="box3" id="id11">4</div>
+            <div class="box3" id="id12">5</div>
+          </div>
+        </div>
+    </main>
+  </body>
+</html>

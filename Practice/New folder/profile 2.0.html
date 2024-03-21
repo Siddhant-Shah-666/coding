@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+       
+      }
+      header {
+        height: 20vh;
+        width: 100vw;
+        background-color:rgb(170, 169, 168);
+      }
+      nav {
+        height: 7vh;
+        width: 100vw;
+        background-color: rgb(27, 17, 17);
+        display: flex;
+
+        font-weight: 900;
+        position: sticky;
+        top: 0;
+        order: 2;
+      }
+      nav li {
+        display: inline-block;
+        margin: 1vh 1.5vw;
+      }
+      nav ul a {
+        color: rgb(253, 253, 252);
+        text-decoration: none;
+        font-size: 40px;
+      }
+      nav ul a:hover {
+        color: rgb(180, 180, 176);
+        text-decoration: underline;
+      }
+      main {
+        height: 85vh;
+        width: 100vw;
+        background-color: rgb(170, 169, 168);
+        /* background-image: url("/Practice/img/night\ bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; */
+       
+      }
+      #container {
+        height: 60vh;
+        width: 80vw;
+        /* margin: 5vh 10vw; */
+        margin: 0 10vw;
+        background-color:rgb(103, 100, 95);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 10px 15px 15px 10px rgb(43, 42, 42) ;
+        border-radius: 10%;
+      }
+
+      .profile {
+        height: 40vh;
+        width: 60vw;
+        /* background-color: blue; */
+        display: flex;
+        align-content: space-around;
+        justify-content: center ;
+        backdrop-filter: blur(55px);
+       
+      }
+      .profile_items {
+        height: 40vh;
+        width: 20vw;
+        margin-top: 3vh;
+        
+      }
+      
+      .image {
+        height: 5vh;
+        width: 10vw;
+        border-radius: 10%;
+        /* background: #e62e2e; */
+        margin: auto;
+        border-radius: 10% 10% 0 0;
+        background: transparent;
+      }
+      .about {
+        height: 25vh;
+        width: 10vw;
+        background: #c7c9c8;
+        margin: auto;
+        color: #353333;
+        font-size: 2vh;
+        box-sizing:border-box;
+        padding: 1vw;
+        border-radius: 10%;
+        box-shadow: 5px 7px 10px 7px rgb(54, 53, 53) ;
+        /* visibility: hidden; */
+        transition: height 1s,color 1s;
+        overflow: hidden;
+      }
+     
+      .about:hover{
+        visibility: visible;
+        height: 35vh;
+        color: #353333;
+      }
+      .img1{
+        height: 17vh;
+        width: 8vw;
+        margin-left: 1vw;
+        border-radius: 5%;
+        box-shadow: 5px 7px 10px 7px rgb(103, 100, 95) ;
+
+      }
+      p{
+        margin-top: 11vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Option</a></li>
+          <li><a href="#">Images</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+       
+      </nav>
+    </header>
+
+    <main>
+      <div id="container">
+        <div class="profile">
+          <div class="profile_items">
+            <div class="image">
+              <img src="/Practice/img/hina_profile.jpg" alt="" class ="img1">
+            </div>
+            <div class="about">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicinng elit. Porro illum quis facere officiis pariatur sit aut perferendis ab labore laborum.
+              </p>
+            </div>
+          </div>
+
+          <div class="profile_items">
+            <div class="image">
+              <img src="/Practice/img/hina_profile.jpg" alt="" class ="img1">
+            </div>
+            <div class="about">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur dipisicing elit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate unde veritatis est. 
+              </p>
+            </div>
+          </div>
+
+          <div class="profile_items">
+            <div class="image">
+              <img src="/Practice/img/hina_profile.jpg" alt="" class ="img1">
+            </div>
+            <div class="about">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas Lorem, ipsum dolor sit amet conseferendis officia soluta voluptatum.
+                blanditiis.
+              </p>
+            </div>
+          </div>
+
+          <div class="profile_items">
+            <div class="image">
+              <img src="/Practice/img/hina_profile.jpg" alt="" class ="img1">
+            </div>
+            <div class="about">
+              <p>
+                Lorem
+                blanditiis Lorem ipsum, dolor sit amet consectetur a quisquam laudantium, dolor veritatis rerum itaque atque ullam enim. Quasi, deserunt pariatur.
+              </p>
+            </div>
+          </div>
+
+          <div class="profile_items">
+            <div class="image">
+              <img src="/Practice/img/hina_profile.jpg" alt="" class ="img1">
+            </div>
+            <div class="about">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicinm necessitatibus. Voluptates molestias fugit incidunt at fuga culpa nisi excepturi?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
